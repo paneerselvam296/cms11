@@ -1,0 +1,54 @@
+
+    
+<div class="sidenav">
+    <img class="img" src="/assets/logo.jpeg" height="75px" width="40%">
+    <h4 style="color: rgb(17, 240, 221);text-align: center;">Admin Dashboard</h4>
+    <br>
+   <li><a routerLink="/home2" href="">Home</a></li>
+   <li><a routerLink="/laptops" href="">Add branch</a></li>
+   <li><a routerLink="/laptop-d" href="">branch details</a></li>
+  
+   <li><a routerLink="/view-customer" href="">UserList</a></li>
+   <li><a routerLink="/find-id" href="">Payment Customer</a></li>
+  </div>
+  <div class="card">
+    <div class="main" style="background-image:url(assets/l7.jpg); background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;">
+<div class="form-group mt-4">
+    <a  routerLink="/home" href="" class="get-started-btn scrollto" style="margin-left: 85%;">Logout</a>
+  </div>
+
+  
+ <main class="box">
+    <div class="form-group mt-4">
+    <a routerLink="/laptops" href="" class="get-started-btn scrollto">Add</a>&nbsp;
+    <a routerLink="/update-l" href="" class="get-started-btn scrollto">Delete</a>
+ </div>
+ <hr>
+     <table class="table">
+        
+        <thead>
+            <tr>
+            <th> Id</th>
+            <th>Branch From</th>
+            <th>Branch To </th>
+            <th>total cost</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let item of listData">
+                <td style="width:1%;">{{item.id}}</td>
+                <td style="width:25%">{{item.description}}</td>
+                <td style="width:30%">{{item.title}}</td>
+                <td style="width:10%">{{item.price}}</td>
+            </tr>
+        </tbody>
+     </table>
+    </main>
+</div>
+</div> 
+
+
+
+

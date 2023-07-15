@@ -1,0 +1,48 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(90deg, rgb(220, 17, 152) 50%);
+    /* background-image: url("../assets/l6.jpg"); */
+  }
+  
+  .inner-row {
+    height: 100vh;
+  }
+  
+  .primaryBg {
+    background-color: rgb(93, 204, 29);
+    transition: background-color 0.3s ease;
+  }
+  
+  .primaryColor {
+    color: rgb(159, 206, 18);
+  }
+  
+  .form-box {
+    background: #fff;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    animation: fade-in 1s ease-in, background-change 5s infinite;
+  }
+  
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes background-change {
+    0% {
+      background-color: rgb(93, 204, 29);
+    }
+    50% {
+      background-color: rgb(243, 51, 24);
+    }
+    100% {
+      background-color: rgb(93, 204, 29);
+    }
+  }
+  
